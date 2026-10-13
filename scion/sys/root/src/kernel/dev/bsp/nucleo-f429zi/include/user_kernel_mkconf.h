@@ -1,7 +1,7 @@
 /*
- * Configuration applicative de la carte NUCLEO-F439ZI (étape 5). Les axes (micro-noyau, cœur,
- * périphérique __tauon_cpu_device__, puce STM32F429xx) sont posés par CMake (cmake/kal,
- * cmake/boards), pas ici.
+ * Configuration applicative de la carte NUCLEO-F429ZI (étape 5, BSP nucleo-f429zi). Les axes
+ * (micro-noyau, cœur, périphérique __tauon_cpu_device__, puce STM32F429xx) sont posés par CMake
+ * (cmake/kal, manifestes lepton-greffon.json de la famille et du BSP), pas ici.
  */
 #ifndef _USER_KERNEL_MKCONF_H_
 #define _USER_KERNEL_MKCONF_H_
@@ -25,6 +25,6 @@
 #define USE_IF_ETHERNET
 
 //configuration de carte de la couche STM32F4 (GPIO, UART, PHY)
-#include "kernel/dev/bsp/nucleo_f439zi/nucleo_f439zi.h"
+#include "kernel/dev/bsp/nucleo-f429zi/nucleo_f439zi.h"
 
 #endif

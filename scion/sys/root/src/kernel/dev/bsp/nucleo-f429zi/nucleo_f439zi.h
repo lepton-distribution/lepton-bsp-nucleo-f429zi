@@ -5,7 +5,7 @@
  * Configuration de carte attendue par la couche STM32F4 de Lepton (kernel/dev/arch/cortexm/
  * stm32f4xx : gpio.c, uart.c, eth.c), incluse par user_kernel_mkconf.h de l'application comme
  * pour l'Olimex STM32-P407 : liste des GPIO, des UART, réglages du PHY Ethernet.
- * Seul endroit (avec cmake/boards et ld/mem_nucleo-f439zi.ld) où figurent broches, fréquences et
+ * Seul endroit (avec le manifeste et ld/mem_nucleo-f439zi.ld) où figurent broches, fréquences et
  * interruptions de la carte. Référence : UM1974 (cartes NUCLEO-144), RM0090, fiche LAN8742A.
  * Ne pas inclure d'en-tête ST ici (inclus par kernelconf.h dans tout le noyau) : les descripteurs
  * ne sont que nommés.

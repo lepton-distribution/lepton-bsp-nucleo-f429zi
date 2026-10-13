@@ -4,8 +4,8 @@
  *
  * Horloges (SystemInit, appelée par le démarrage générique kernel/core/arch/cortexm), GPIO,
  * périphériques /dev/board, /dev/ttys3 (USART3, console), /dev/ttys6 (USART6), descripteur
- * Ethernet de la couche eth.c (/dev/eth0 : dev_stm32f4xx_eth_map). Interruptions :
- * nucleo_f439zi_vectors.c. Écrit d'après le BSP Olimex STM32-P407 (même couche STM32F4).
+ * Ethernet de la couche eth.c (/dev/eth0 : dev_stm32f4xx_eth_map). Interruptions : famille
+ * stm32f4xx, vecteurs/stm32f429xx_vectors.c. Écrit d'après le BSP Olimex STM32-P407.
  */
 #include <stdint.h>
 #include <stdarg.h>
