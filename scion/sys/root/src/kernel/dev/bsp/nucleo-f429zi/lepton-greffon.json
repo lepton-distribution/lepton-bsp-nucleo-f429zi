@@ -1,0 +1,30 @@
+{
+  "nom": "nucleo-f429zi",
+  "type": "bsp",
+  "version": "1.0.0",
+  "description": "Carte NUCLEO-F429ZI (STM32F429ZI, Cortex-M4F) : HSE 8 MHz du ST-LINK en bypass, PLL 168 MHz ; USART3 console ttys3 (ST-LINK), USART6 ttys6, Ethernet RMII + PHY LAN8742A eth0.",
+  "destination": "kernel/dev/bsp/nucleo-f429zi",
+  "bibliotheque": "bsp",
+  "famille": "stm32f4xx",
+  "coeur": "cortex-m4f",
+  "mcu": "STM32F429ZI",
+  "frequence_cpu": 168000000,
+  "entete_config_noyau": "include/user_kernel_mkconf.h",
+  "script_liens": "ld/mem_nucleo-f439zi.ld",
+  "demarrage": [
+    "nucleo_f439zi_board.c"
+  ],
+  "openocd": [
+    "debug/openocd-nucleo-f439zi.cfg"
+  ],
+  "sonde": "stlink",
+  "compilation": {
+    "publique": {
+      "definitions": [
+        "__tauon_cpu_device__=__tauon_cpu_device_cortexM4_stm32f4__",
+        "STM32F429xx",
+        "HSE_VALUE=8000000"
+      ]
+    }
+  }
+}
